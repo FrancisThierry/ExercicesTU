@@ -1,14 +1,6 @@
 import unittest
-import os
-import sys
 
-from src.imei.imei_management import Imei_Management
-
-
-
-
-
-
+from src.card_checker.imei.imei_management import Imei_Management
     
 class TestImeiManagement(unittest.TestCase):
     def setUp(self):

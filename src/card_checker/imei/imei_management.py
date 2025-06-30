@@ -1,6 +1,12 @@
-class Imei_Management:
+from card_checker.base_card_checker import BaseCardChecker
+
+
+class Imei_Management(BaseCardChecker):
     def __init__(self, imei):
         self.imei = imei
+    def check_length(self):
+        """Check if the IMEI number has the correct length."""
+        return len(self.imei) != 15
 
     def is_valid(self):
         """Check if the IMEI number is valid."""
